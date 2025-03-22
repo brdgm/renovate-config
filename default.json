@@ -24,7 +24,7 @@
       "automerge": true
     },
     {
-      "matchDepNames": "@brdgm/brdgm-commons",
+      "matchDepNames": ["@brdgm/brdgm-commons"],
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance"],
       "groupName": "dependencies",
       "automerge": true,
