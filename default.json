@@ -11,7 +11,7 @@
   },
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["after 8pm on friday"]
+    "schedule": ["before 4am on the first day of the month"]
   },
   "separateMajorMinor": false,
   "vulnerabilityAlerts": {
