@@ -7,11 +7,10 @@
   ],
   "labels": ["dependencies"],
   "schedule": ["before 4am on the first day of the month"],
-  "npm": {
-    "minimumReleaseAge": "3 days"
-  },
+  "minimumReleaseAge": "3 days",
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "schedule": ["before 4am on the first day of the month"]
   },
   "separateMajorMinor": false,
   "vulnerabilityAlerts": {
