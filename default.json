@@ -7,7 +7,6 @@
   ],
   "labels": ["dependencies"],
   "schedule": ["before 4am on the first day of the month"],
-  "minimumReleaseAge": "3 days",
   "separateMajorMinor": false,
   "vulnerabilityAlerts": {
     "enabled": false
@@ -17,13 +16,6 @@
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
       "groupName": "dependencies",
       "automerge": true
-    },
-    {
-      "matchDepNames": ["@brdgm/brdgm-commons"],
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
-      "groupName": "dependencies",
-      "automerge": true,
-      "minimumReleaseAge": "0 days"
     },
     {
       "matchDepNames": ["vite", "@vitejs/plugin-legacy"],
