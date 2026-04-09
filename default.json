@@ -8,23 +8,19 @@
   "labels": ["dependencies"],
   "schedule": ["before 4am on the first day of the month"],
   "minimumReleaseAge": "3 days",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "groupName": "dependencies"
-  },
   "separateMajorMinor": false,
   "vulnerabilityAlerts": {
     "enabled": false
   },
   "packageRules": [
     {
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance"],
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
       "groupName": "dependencies",
       "automerge": true
     },
     {
       "matchDepNames": ["@brdgm/brdgm-commons"],
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance"],
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
       "groupName": "dependencies",
       "automerge": true,
       "minimumReleaseAge": "0 days"
