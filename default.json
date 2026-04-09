@@ -12,6 +12,14 @@
   "vulnerabilityAlerts": {
     "enabled": false
   },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/.github/workflows/**"],
+      "matchStrings": ["image:\\s*(?<depName>mcr\\.microsoft\\.com/playwright):(?<currentValue>\\S+)"],
+      "datasourceTemplate": "docker"
+    }
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
@@ -38,6 +46,11 @@
       "versionCompatibility": "^v?(?<version>[^-]+)(?<compatibility>-.*)?$",
       "versioning": "semver",
       "groupName": "dependencies"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchDepNames": ["mcr.microsoft.com/playwright"],
+      "enabled": false
     }
   ],
   "ignoreDeps": [
