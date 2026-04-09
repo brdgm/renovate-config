@@ -28,6 +28,14 @@
       "groupName": "dependencies",
       "automerge": true,
       "minimumReleaseAge": "0 days"
+    },
+    {
+      "matchDepNames": ["vite", "@vitejs/plugin-legacy"],
+      "allowedVersions": "<8.0.0"
+    },
+    {
+      "matchDepNames": ["typescript"],
+      "allowedVersions": "<6.0.0"
     }
   ],
   "ignoreDeps": [
