@@ -16,14 +16,6 @@
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
       "groupName": "dependencies",
       "automerge": true
-    },
-    {
-      "matchDepNames": ["vite", "@vitejs/plugin-legacy"],
-      "allowedVersions": "<8.0.0"
-    },
-    {
-      "matchDepNames": ["typescript"],
-      "allowedVersions": "<6.0.0"
     }
   ],
   "ignoreDeps": [
