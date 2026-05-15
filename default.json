@@ -19,6 +19,7 @@
     }
   ],
   "ignoreDeps": [
-    "sass"
+    "sass",
+    "eslint-plugin-i18n-json"
   ]
 }
