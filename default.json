@@ -16,6 +16,10 @@
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
       "groupName": "dependencies",
       "automerge": true
+    },
+    {
+      "matchDepNames": ["typescript"],
+      "allowedVersions": "<6.0.0"
     }
   ],
   "ignoreDeps": [
